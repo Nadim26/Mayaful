@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Bitter:wght@100;600&family=Kaushan+Script&family=Waterfall&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>Mayaful</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <section id="banner">
+        <img src="img/logo.png" class="logo">
+    <div class="banner-text">
+        <h1>Welcome To Mayaful</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto fugit alias enim pariatur quos voluptatum eum iure perferendis voluptatibus, asperiores eaque minima nihil et molestias vero? Id ullam omnis sit ex placeat, error aperiam?</p>
+
+    </div>
+    </section>
+    <div id="sideNav">
+         <nav>
+        <ul>
+            <li><a href="#banner">Home</a></li>
+            <!-- <li><a href="#">About Us</a></li> -->
+            <li><a href="#service">Our Event</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+           
+        </ul>       
+    </nav>
+    </div>
+    <div id="manuBtn">
+        <img src="img/manu.png" id ="manu">
+    </div>
+
+    <section id="service">
+        <div class="title-text">
+            <h1>Our Events</h1>
+        </div>
+        <div class="Service-box">
+            <div class="single-service">
+                <img src="img/school.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h2>Mayaful School</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, iste temporibus neque est maxime deserunt earum velit quisquam unde iure architecto voluptate labore culpa perspiciatis aspernatur a voluptatum nihil atque!</p>
+
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/winter.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h2>Winter Cloth Distribution </h2>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, iste temporibus neque est maxime deserunt earum velit quisquam unde iure architecto voluptate labore culpa perspiciatis aspernatur a voluptatum nihil atque!</p>
+                    
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/eid.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h2>festival Cloth Distribution</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, iste temporibus neque est maxime deserunt earum velit quisquam unde iure architecto voluptate labore culpa perspiciatis aspernatur a voluptatum nihil atque!</p>
+                    
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/free.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h2>Free Friday School</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, iste temporibus neque est maxime deserunt earum velit quisquam unde iure architecto voluptate labore culpa perspiciatis aspernatur a voluptatum nihil atque!</p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="footer">
+        <div class="title-text">
+            <h1>Contact with Us</h1>
+        </div>
+        <div class="social-link">
+            <a href="https://www.facebook.com/mayaful.bd/" target="_blank">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+        </div>
+        <div class="contact">
+            <p>Mobile : 01932868588 <br>Location : Chittagong </p>
+        </div>
+
+    </section>
+    
+    <script>
+        var manuBtn = document.getElementById("manuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var manu = document.getElementById("manu")
+
+        manuBtn.onclick = function(){
+            if(sideNav.style.right == "-150px"){
+                sideNav.style.right = "0";
+                manu.src = "img/close.png";
+            }
+            else{
+                sideNav.style.right = "-150px";
+                manu.src = "img/manu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+
+   
+</body>
+</html>
